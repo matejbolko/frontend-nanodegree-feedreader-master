@@ -26,22 +26,40 @@ $(function() {
             expect(allFeeds.length).not.toBe(0);
         });
 
-
+        // point8
         /* TODO: Write a test that loops through each feed
          * in the allFeeds object and ensures it has a URL defined
          * and that the URL is not empty.
          */
+        it('has a URL defined and that the URL is not empty', function() {
+            allFeeds.forEach(function(feed) {
+                //ensures it has a URL defined
+                expect(feed.url).toBeDefined();
+                //ensures the URL is not empty.
+                expect(feed.length).not.toBe(0);
+            });
+        });
 
-
+        // point9
         /* TODO: Write a test that loops through each feed
          * in the allFeeds object and ensures it has a name defined
          * and that the name is not empty.
          */
-    });
+        it('has a name defined and that the name is not empty', function() {
+            allFeeds.forEach(function(feed) {
+                //it has a name defined
+                expect(feed.name).toBeDefined();
+                //that the name is not empty
+                expect(feed.name).not.toBe('');
+            });
+        });
 
+    }); //end RSS Feeds
 
+    // point 10
     /* TODO: Write a new test suite named "The menu" */
-
+    describe('The menu', function() {
+    });
         /* TODO: Write a test that ensures the menu element is
          * hidden by default. You'll have to analyze the HTML and
          * the CSS to determine how we're performing the

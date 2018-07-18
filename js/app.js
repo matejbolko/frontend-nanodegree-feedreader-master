@@ -7,6 +7,7 @@
  */
 
 // The names and URLs to all of the feeds we'd like available.
+
 var allFeeds = [
     {
         name: 'Udacity Blog',
@@ -22,7 +23,8 @@ var allFeeds = [
         url: 'http://feeds.feedburner.com/udacity-linear-digressions'
     }
 ];
-
+// point6 and 7
+// var allFeeds = [];
 /* This function starts up our application. The Google Feed
  * Reader API is loaded asynchonously and will then call this
  * function when the API is loaded.
