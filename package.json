@@ -1,0 +1,13 @@
+{
+  "name": "my-standard",
+  "devDependencies": {
+    "standard": "^11.0.1"
+  },
+  "scripts": {
+    "test": "standard"
+  },
+  "dependencies": {
+    "npm": "^6.1.0"
+  }
+}
+
